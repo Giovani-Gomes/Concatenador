@@ -15,8 +15,8 @@
             const reader = new FileReader();
 
             reader.onload = function(e) {
-                const lines = e.target.result.split(/\r?\n/); // separa as linhas
-                const modifiedLines = lines.map(line => line.trim() ? word + line : ''); // adiciona dado no INÍCIO
+                const lines = e.target.result.split(/\r?\n/); 
+                const modifiedLines = lines.map(line => line.trim() ? word + line : ''); 
 
                 const newContent = modifiedLines.join('\n');
 
